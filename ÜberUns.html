@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2-Footprint Webseite der EarthGuardians - Über Uns</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Hier wird der Header eingefügt -->
+    <div id="header-placeholder"></div>
+
+    <main class="container mt-4">
+        <section id="about">
+            <h1>&Uuml;ber Uns</h1>
+			 <ul class="list-group">
+                <li class="list-group-item">
+                    <h2>Unsere Vision</h2>
+					<p>
+						EarthGuardians hat die Vision einer nachhaltigen und klimafreundlichen Zukunft f&uuml;r unseren Planeten. Wir glauben daran, dass wir gemeinsam einen positiven Einfluss auf die Umwelt haben k&ouml;nnen, indem wir uns f&uuml;r den Schutz der Natur und die Reduzierung von CO2-Emissionen einsetzen.
+					</p>
+                </li>
+                <li class="list-group-item">
+                    <h2>Unsere Mission</h2>
+					<p>
+						Unsere Mission ist es, Transparenz &uuml;ber CO2-Emissionen von L&auml;ndern und Unternehmen zu schaffen und die globalen Bem&uuml;hungen zur Bek&auml;mpfung des Klimawandels zu unterst&uuml;tzen. Wir bieten Beratungsdienstleistungen, Bildungsprogramme und Datenanalysen, um nachhaltige L&ouml;sungen zu f&ouml;rdern und die Umwelt zu sch&uuml;tzen.
+					</p>
+                </li>
+                <li class="list-group-item">
+					<h2>Unser Team</h2>
+					<p>
+						Unser engagiertes Team besteht aus erfahrenen Fachleuten aus den Bereichen Umweltwissenschaften, Technologie, Nachhaltigkeit und Bildung. Gemeinsam arbeiten wir daran, innovative und wirkungsvolle Maßnahmen zur Emissionsreduzierung zu entwickeln und umzusetzen.
+					</p>
+                </li>
+        </section>
+    </main>
+
+    <!-- Hier wird der Footer eingefügt -->
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <!-- Bootstrap JavaScript (inklusive Popper.js) über CDN einbinden -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- header.js einbinden -->
+    <script src="header.js"></script>
+
+    <!-- footer.js einbinden -->
+    <script src="footer.js"></script>
+
+    <!-- JavaScript zum Rendern des Headers und Footers -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const headerPlaceholder = document.getElementById("header-placeholder");
+            headerPlaceholder.innerHTML = renderHeader();
+
+            const footerPlaceholder = document.getElementById("footer-placeholder");
+            footerPlaceholder.innerHTML = renderFooter();
+        });
+    </script>
+</body>
+</html>

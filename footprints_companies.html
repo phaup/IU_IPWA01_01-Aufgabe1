@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2-Footprint Webseite der EarthGuardians - CO2-Fußabdruck Unternehmen</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Hier wird der Header eingefügt -->
+    <div id="header-placeholder"></div>
+
+    <main class="container mt-4">
+        <section>
+            <h1>CO2-Fußabdruck Unternehmen*</h1>
+            <table id="company-table" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Unternehmen</th>
+                        <th>CO2-Emissionen (Millionen Tonnen)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RWE</td>
+                        <td>125.4</td>
+                    </tr>
+                    <tr>
+                        <td>HeidelbergCement</td>
+                        <td>82.0</td>
+                    </tr>
+                    <tr>
+                        <td>Lufthansa</td>
+                        <td>33.0</td>
+                    </tr>
+					                    <tr>
+                        <td>Thyssen-Krupp</td>
+                        <td>24.0</td>
+                    </tr>
+                    <tr>
+                        <td>BASF</td>
+                        <td>21.8</td>
+                    </tr>
+                    <tr>
+                        <td>VW</td>
+                        <td>8.2</td>
+                    </tr>
+                    <tr>
+                        <td>EON</td>
+                        <td>7.8</td>
+                    </tr>
+                    <tr>
+                        <td>Deutsche Post</td>
+                        <td>6.6</td>
+                    </tr>
+                    <tr>
+                        <td>Covestro</td>
+                        <td>6.5</td>
+                    </tr>
+                    <tr>
+                        <td>Bayer</td>
+                        <td>5.5</td>
+                    </tr>
+                    <tr>
+                        <td>Continental</td>
+                        <td>3.3</td>
+                    </tr>
+                    <tr>
+                        <td>Daimler</td>
+                        <td>2.9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+		<p>*ssssssssssssssssssssssssssssssssssDie Daten dieser Tabelle stammen aus Statista. Nähere Informationen zur Quelle entnehmen Sie bitte der Fallstudie.</p>
+    </main>
+
+    <!-- Hier wird der Footer eingefügt -->
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <!-- Bootstrap JavaScript (inklusive Popper.js) über CDN einbinden -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- header.js einbinden -->
+    <script src="header.js"></script>
+
+    <!-- footer.js einbinden -->
+    <script src="footer.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <!-- JavaScript zum Rendern des Headers und Footers -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const headerPlaceholder = document.getElementById("header-placeholder");
+            headerPlaceholder.innerHTML = renderHeader();
+
+            const footerPlaceholder = document.getElementById("footer-placeholder");
+            footerPlaceholder.innerHTML = renderFooter();
+
+            // Suchfunktion
+            $("#search-input").on("keyup", function() {
+                const searchValue = $(this).val().toLowerCase();
+                $("#company-table tbody tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
+                });
+            });
+
+            // Tabellenfilter und Sortierung
+            $("#company-table").DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/German.json"
+                }
+            });
+        });
+    </script>
+</body>
+</html>
