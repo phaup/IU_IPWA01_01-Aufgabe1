@@ -55,9 +55,11 @@
     <!-- JavaScript zum Rendern des Headers und Footers -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Den Header-Platzhalter füllen
             const headerPlaceholder = document.getElementById("header-placeholder");
             headerPlaceholder.innerHTML = renderHeader();
 
+            // Den Footer-Platzhalter füllen
             const footerPlaceholder = document.getElementById("footer-placeholder");
             footerPlaceholder.innerHTML = renderFooter();
         });
