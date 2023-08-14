@@ -13,28 +13,32 @@
 
     <main class="container mt-4">
         <section id="about">
+            <!-- Überschrift für den Abschnitt &Uuml;ber Uns -->
             <h1>&Uuml;ber Uns</h1>
-			 <ul class="list-group">
+             <!-- Unsortierte Liste mit Gruppenstilen -->
+             <ul class="list-group">
+                <!-- Einzelne Listeneinträge  mit Gruppenstil -->
                 <li class="list-group-item">
                     <h2>Unsere Vision</h2>
-					<p>
-						EarthGuardians hat die Vision einer nachhaltigen und klimafreundlichen Zukunft f&uuml;r unseren Planeten. Wir glauben daran, dass wir gemeinsam einen positiven Einfluss auf die Umwelt haben k&ouml;nnen, indem wir uns f&uuml;r den Schutz der Natur und die Reduzierung von CO2-Emissionen einsetzen.
-					</p>
+                    <p>
+                        EarthGuardians hat die Vision einer nachhaltigen und klimafreundlichen Zukunft f&uuml;r unseren Planeten. Wir glauben daran, dass wir gemeinsam einen positiven Einfluss auf die Umwelt haben k&ouml;nnen, indem wir uns f&uuml;r den Schutz der Natur und die Reduzierung von CO2-Emissionen einsetzen.
+                    </p>
                 </li>
                 <li class="list-group-item">
                     <h2>Unsere Mission</h2>
-					<p>
-						Unsere Mission ist es, Transparenz &uuml;ber CO2-Emissionen von L&auml;ndern und Unternehmen zu schaffen und die globalen Bem&uuml;hungen zur Bek&auml;mpfung des Klimawandels zu unterst&uuml;tzen. Wir bieten Beratungsdienstleistungen, Bildungsprogramme und Datenanalysen, um nachhaltige L&ouml;sungen zu f&ouml;rdern und die Umwelt zu sch&uuml;tzen.
-					</p>
+                    <p>
+                        Unsere Mission ist es, Transparenz &uuml;ber CO2-Emissionen von L&auml;ndern und Unternehmen zu schaffen und die globalen Bem&uuml;hungen zur Bek&auml;mpfung des Klimawandels zu unterst&uuml;tzen. Wir bieten Beratungsdienstleistungen, Bildungsprogramme und Datenanalysen, um nachhaltige L&ouml;sungen zu f&ouml;rdern und die Umwelt zu sch&uuml;tzen.
+                    </p>
                 </li>
                 <li class="list-group-item">
-					<h2>Unser Team</h2>
-					<p>
-						Unser engagiertes Team besteht aus erfahrenen Fachleuten aus den Bereichen Umweltwissenschaften, Technologie, Nachhaltigkeit und Bildung. Gemeinsam arbeiten wir daran, innovative und wirkungsvolle Maßnahmen zur Emissionsreduzierung zu entwickeln und umzusetzen.
-					</p>
+                    <h2>Unser Team</h2>
+                    <p>
+                        Unser engagiertes Team besteht aus erfahrenen Fachleuten aus den Bereichen Umweltwissenschaften, Technologie, Nachhaltigkeit und Bildung. Gemeinsam arbeiten wir daran, innovative und wirkungsvolle Ma&szlig;nahmen zur Emissionsreduzierung zu entwickeln und umzusetzen.
+                    </p>
                 </li>
         </section>
     </main>
+    
 
     <!-- Hier wird der Footer eingefügt -->
     <footer>
@@ -53,9 +57,11 @@
     <!-- JavaScript zum Rendern des Headers und Footers -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Den Header-Platzhalter füllen
             const headerPlaceholder = document.getElementById("header-placeholder");
             headerPlaceholder.innerHTML = renderHeader();
 
+            // Den Footer-Platzhalter füllen
             const footerPlaceholder = document.getElementById("footer-placeholder");
             footerPlaceholder.innerHTML = renderFooter();
         });

@@ -12,8 +12,10 @@
     <div id="header-placeholder"></div>
 
     <main class="container mt-4">
+        <!-- Abschnitt: CO2-Fußabdruck Unternehmen -->
         <section>
             <h1>CO2-Fußabdruck Unternehmen*</h1>
+            <!-- Tabelle zur Anzeige der CO2-Emissionsdaten -->
             <table id="company-table" class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -73,6 +75,7 @@
                 </tbody>
             </table>
         </section>
+        <!-- Hinweis zur Datenquelle -->
 		<p> *Die Daten dieser Tabelle stammen aus Statista. Nähere Informationen zur Quelle entnehmen Sie bitte der Fallstudie.</p>
     </main>
 
@@ -93,16 +96,19 @@
     <!-- footer.js einbinden -->
     <script src="footer.js"></script>
 
-    <!-- DataTables JavaScript -->
+    <!-- DataTables JavaScript (Bibliothek für Tabellenfunktionen) -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 
-    <!-- JavaScript zum Rendern des Headers und Footers -->
+  <!-- JavaScript zum Rendern des Headers, Footers, der Suchfunktion und der Tabellenfilter/Sortierung -->
     <script>
+        // Das DOMContentLoaded-Ereignis wird abgewartet, um sichererzustellen, dass der HTML-Inhalt vollständig geladen wurde
         document.addEventListener("DOMContentLoaded", function() {
+            // Den Header-Platzhalter füllen
             const headerPlaceholder = document.getElementById("header-placeholder");
             headerPlaceholder.innerHTML = renderHeader();
 
+            // Den Footer-Platzhalter füllen
             const footerPlaceholder = document.getElementById("footer-placeholder");
             footerPlaceholder.innerHTML = renderFooter();
 

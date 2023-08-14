@@ -12,7 +12,6 @@
   <!-- Hier wird der Header eingefügt -->
   <div id="header-placeholder"></div>
 
-  <!-- Restlicher Seiteninhalt -->
   <main>
     <div class="container">
       <h1>Willkommen bei EarthGuardians</h1>
@@ -39,9 +38,11 @@
   <!-- JavaScript zum Rendern des Headers und Footers -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      // Den Header-Platzhalter füllen
       const headerPlaceholder = document.getElementById("header-placeholder");
       headerPlaceholder.innerHTML = renderHeader();
 
+      // Den Footer-Platzhalter füllen
       const footerPlaceholder = document.getElementById("footer-placeholder");
       footerPlaceholder.innerHTML = renderFooter();
     });
